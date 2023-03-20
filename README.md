@@ -23,3 +23,6 @@ Course include:
 - The Standard Template Library (STL)
 - I/O Streams
 - Exception Handling
+
+
+`g++ -Wall -std=c++17 .\main.cpp -o main.exe`
