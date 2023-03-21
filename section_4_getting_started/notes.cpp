@@ -40,4 +40,49 @@
             5 |     std::cout << "Hello world" << std::endll;
             |                                        ^~~~~
             |                                        endl
+
+
+-----------------
+
+30 What are Compile Warnings
+
+    Do not ignore them!
+    
+        - The Compiler has recognized an issue with your code that could lead to potential problem
+        - It is only a warning because the compiler is still able to generate correct machine code
+
+    int miles_driven;
+        std::cout << miles_driven;
+
+    warning: 'miles_driven' is used uninitialized...
+
+
+31 What are linker errors
+
+    - The linker is having trouble linking all the objects files together to create an executable
+    - usually there is a library or object file that is missing
+
+
+32 What are runtime errors
+
+    -Errors that occur when the program is executing
+    - some typical runtime errors
+        - divide by zero
+        - filer not found
+        - out of memory
+    - can cause your program to crash
+    - exception handling can help deal with runtime errors
+
+33 Logic Errors
+
+    - Errors or bugs in your code that cause your program to run incorrectly
+    - logic errors are mistakes made by the programmer
+
+    suppose we have a program that determines if a person can vote in an election and you must be 18 years or older to vode
+
+    if (age >18) {
+        std::cout << "Yes, you can vote!";
+    }
+
+
 */
