@@ -96,4 +96,41 @@ example:
     - `using std::endl;
 
     - cout
-    - 
+    -
+
+# 42 Basic input and output (I/O_ using cin and cout)
+
+`cout`, `cin`, `cerr` and `clog` are objects representing streams
+`cout`
+- standard output stream
+- console
+`cin`
+- standard input stream`
+- keyboard
+`<<`
+- insertion operator
+- output streams
+`>>`
+- extraction operator
+- input streams
+
+### `cout` and `<<`
+
+- insert the data into the cout stream
+    cout << data;
+- can be chained
+    cout << "data 1 is "" << data1;
+- does not automatically add line break
+    cout << "data 1 is " << data1 << endl;
+    cout << "data 1 is " << data1 << "\n";
+
+### `cin` and `>>`
+
+- extract data from the cin stream based on data's type
+    cin >> data;
+
+- can be chained
+    cin >> data1  >> data2;
+
+- can fail if the entered data cannot be interpreted `data` could have an undetermined value
+
