@@ -117,3 +117,19 @@ int age = 21; // C-like initialization
 int age (21); // constructor initialization
 
 int age {21}; // C++ 11 list initialization syntax <--- he is encouraging to use this type of initialization
+
+# 46 Global Variables
+
+```
+using namespace std;
+
+int age {18};
+
+int main() {
+  int age {16};
+
+  cout << age << endl;
+
+}
+
+```
