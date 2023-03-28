@@ -178,7 +178,6 @@ wchar_t                 Can represent the largest available character set
 - signed and unsigned versions
 - A signed integer is a 32-bit datum that encodes an integer in the range [-2147483648 to 2147483647]. An unsigned integer is a 32-bit datum that encodes a nonnegative integer in the range [0 to 4294967295].
 
-
 ```
   Type Name                         Size / precision
   signed short int                    at least 16 bits
@@ -192,8 +191,8 @@ wchar_t                 Can represent the largest available character set
   unsigned long long                  at least 64 bits
 ```
 
-
 ## Floating-point Type
+
 - used to represent non-integer numbers
 - represented by mantissa and exponent (scientific notation)
 - precision is the number of digits in the mantissa
@@ -206,12 +205,11 @@ double                  no less than float / 15 decimal digits      2.2x10^-308 
 long double             no less than double / 19 decimal digits     3.3x10^-4932 to 1.2x10^4932
 ```
 
-
 ## Bollean type
+
 - used to represent true and false
 - zero is false
 - non-zero is true
-
 
 ```
 type name           size / precision
@@ -219,5 +217,27 @@ bool                usually 8 bits
                     true or false (C++ keywords)
 ```
 
+# 48 What is the size of a Variable (sizeof)
 
+### The sizeof operator
 
+- determines the size in bytes of a type or variable
+
+- examples
+  - sizeof(int)
+  - sizeof(double)
+  - sizeof(some_variable)
+  - sizeof some_variable
+
+## using the sizeof operator
+
+- <climits> and <cfloat>
+
+- the climits and cfloat include files contain size and precision information about you implementation of C++
+
+INT_MAX
+INT_MIN
+
+LONG_MIN
+LONG_MAX
+etc....
