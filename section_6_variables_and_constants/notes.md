@@ -241,3 +241,65 @@ INT_MIN
 LONG_MIN
 LONG_MAX
 etc....
+
+# 49 What is a constant
+
+- Like C++ variables
+
+  - have names
+  - occupy storage
+  - are usually typed
+
+        However, their value cannot change once declared!
+
+- Literal constant
+- Declared constants
+  - const keyword
+- constant expressions
+  - constexpr keyword
+- enumerated constant
+  - enum keyword
+- Defined constants
+  - #define
+
+### Literal Constants
+
+- The most obvious kind of constant
+
+  - x = 12;
+  - y = 1.56;
+  - name = "Frank";
+  - middle_initial = 'J'
+
+- Integer Literal Constants
+
+  - 12 - an integer
+  - 12U - an unsigned integer
+  - 12L - a long integer
+  - 12LL - a long long integer
+
+- Floating-point Literal Constants
+
+  - 12.1 - a double
+  - 12.1F - a float
+  - 12.1L - a long double
+
+- Character Literal Constants (escape codes)
+
+  - \n - new line
+  - \r - return
+  - \t - tab
+  - \b - backspace
+  - \' - single quote
+  - \" - double quote
+  - \\ = backslash
+
+- Constants declared using the const keyword
+  - const double pi {3.1415926};
+  - const int months_in_year {12};
+    pi = 2.5; // compiler error
+
+Defined Constant:
+
+- constant declared using the const keyword
+  - '#defined pi 3.1415926' <- Do not use defined constants in modern C++
