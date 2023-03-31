@@ -36,6 +36,7 @@
   "C_Cpp_Runner.useAddressSanitizer": false,
   "files.associations": {
     "*.embeddedhtml": "html",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "algorithm": "cpp"
   }
 }
