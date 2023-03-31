@@ -27,3 +27,8 @@ Course include:
 ## Commands:
 
 `g++ -Wall -std=c++17 .\main.cpp -o main.exe`
+
+
+## Links
+
+https://en.cppreference.com/w/cpp/language/operator_precedence
