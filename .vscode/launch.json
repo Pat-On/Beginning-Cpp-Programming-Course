@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_4_getting_started",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_4_getting_started/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_9_controlling_program_flow/source/ChallengeSolution",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_9_controlling_program_flow/source/ChallengeSolution/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
