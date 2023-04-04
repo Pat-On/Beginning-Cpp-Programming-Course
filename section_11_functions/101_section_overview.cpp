@@ -1,0 +1,16 @@
+/*
+
+        Function
+            - definition
+            - prototype
+            - Parameters and pass-by-value
+            - return statement
+            - default parameter values
+            - overloading
+            - passing arrays to function
+            - pass-by-reference
+            - inline functions
+            - auto return type
+            - recursive functions
+
+*/
