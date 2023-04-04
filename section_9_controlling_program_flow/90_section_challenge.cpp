@@ -84,7 +84,7 @@ int main()
         cout << "Q - Quit" << endl;
         cout << "\nEnter your choice: ";
         cin >> selection;
-
+        // "\nP - Print numbers"
         if (selection == 'P' || selection == 'p')
         {
             if (numbers.size() == 0)
@@ -97,6 +97,7 @@ int main()
                 cout << "]" << endl;
             }
         }
+        //  "A - Add a number
         else if (selection == 'A' || selection == 'a')
         {
             int num_to_add{};
@@ -105,6 +106,7 @@ int main()
             numbers.push_back(num_to_add);
             cout << num_to_add << " added" << endl;
         }
+        // "M - Display mean of the numbers"
         else if (selection == 'M' || selection == 'm')
         {
             if (numbers.size() == 0)
@@ -117,6 +119,7 @@ int main()
                 cout << "The mean is : " << static_cast<double>(total) / numbers.size() << endl;
             }
         }
+        // "S - Display the smallest number"
         else if (selection == 'S' || selection == 's')
         {
             if (numbers.size() == 0)
@@ -130,6 +133,7 @@ int main()
                 cout << "The smallest number is: " << smallest << endl;
             }
         }
+        // "L - Display the largest number"
         else if (selection == 'L' || selection == 'l')
         {
             if (numbers.size() == 0)
@@ -143,6 +147,7 @@ int main()
                 cout << "The largest number is: " << largest << endl;
             }
         }
+        //  "Q - Quit"
         else if (selection == 'Q' || selection == 'q')
         {
             cout << "Goodbye" << endl;
@@ -151,6 +156,8 @@ int main()
         {
             cout << "Unknown selection, please try again" << endl;
         }
+
+        // do while
     } while (selection != 'q' && selection != 'Q');
 
     cout << endl;
