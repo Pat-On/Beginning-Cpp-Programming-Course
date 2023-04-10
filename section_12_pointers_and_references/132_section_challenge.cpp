@@ -17,19 +17,21 @@ This function expects:
     Then it loops through each element of arr2 and multiples it across all the
     elements of arr1 and each product is stored in the newly created array
 ********************************************************************/
-int *apply_all(const int *const arr1, size_t size1, const int *const arr2, size_t size2)
+int *apply_all(const int *const arr1, size_t size1, const int *const arr2, size_t size2) // 2 x double const
 {
-    int *new_array{};
+    int *new_array{}; // new 3rd array
 
-    new_array = new int[size1 * size2];
+    new_array = new int[size1 * size2]; // length of arr
 
     int position{0};
     for (size_t i{0}; i < size2; ++i)
     {
         for (size_t j{0}; j < size1; ++j)
         {
-            new_array[position] = arr1[j] * arr2[i];
-            ++position;
+            // new_array[position] = arr1[j] * arr2[i]; // pointer subscription notation
+            *(new_array + position) = *(arr1 + j) * *(arr2 + i); // pointer offset notation
+            // ++position;
+            position++;
         }
     }
     return new_array;
@@ -42,11 +44,11 @@ This function expects:
     The function loops through arr and displays all the integers
     in the array
 ********************************************************************/
-void print(const int *const arr, size_t size)
+void print(const int *const arr, size_t size) // double const point and cost variable
 {
     cout << "[ ";
     for (size_t i{0}; i < size; ++i)
-        cout << arr[i] << " ";
+        cout << arr[i] << " "; //. pointer subscript notation - you can replace it with pointer offset notation (arr + i)
     cout << "]";
     cout << endl;
 }
@@ -66,12 +68,18 @@ int main()
     print(array2, array2_size);
 
     int *results = apply_all(array1, array1_size, array2, array2_size);
+    /*
+    constexpr allow the compiler to determine the value of an expression.
+    That's very efficient since the value will not have to be evaluated at runtime.
+    constexpr can get pretty complex and can even evaluate results of some functions at compile time,
+    so these function calls can be totally eliminated at runtime.
+    */
     constexpr size_t results_size{array1_size * array2_size};
 
     cout << "Result: ";
     print(results, results_size);
 
-    delete[] results;
+    delete[] results; // remember to release the resources! always!
     cout << endl;
     return 0;
 }
