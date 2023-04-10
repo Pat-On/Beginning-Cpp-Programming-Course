@@ -28,11 +28,12 @@ Course include:
 
 `g++ -Wall -std=c++17 .\main.cpp -o main.exe`
 
-
 ## Links
 
 https://en.cppreference.com/w/cpp/language/operator_precedence
 
-
 C++ Standard Library Headers
 https://en.cppreference.com/w/cpp/header
+
+check smart pointers:
+https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
