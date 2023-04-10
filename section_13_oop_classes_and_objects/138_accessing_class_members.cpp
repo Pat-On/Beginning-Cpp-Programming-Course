@@ -108,5 +108,7 @@ int main()
     // calling method through the pointer
     enemy->talk("I will destroy you!");
 
+    delete enemy; // no leaking! :>
+
     return 0;
 }
