@@ -28,6 +28,8 @@ Course include:
 
 `g++ -Wall -std=c++17 .\main.cpp -o main.exe`
 
+`g++ -Wall -std=c++17 .\section_13_oop_classes_and_objects\source\ImplementingMethods2\main.cpp .\section_13_oop_classes_and_objects\source\ImplementingMethods2\Account.cpp -o main.exe`
+
 ## Links
 
 https://en.cppreference.com/w/cpp/language/operator_precedence

@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_12_pointers_and_references/source/Debugger",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_12_pointers_and_references/source/Debugger/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_13_oop_classes_and_objects/source/ImplementingMethods2",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_13_oop_classes_and_objects/source/ImplementingMethods2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
