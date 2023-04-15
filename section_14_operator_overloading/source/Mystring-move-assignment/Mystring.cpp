@@ -66,6 +66,8 @@ Mystring &Mystring::operator=(Mystring &&rhs) {
         return *this;
     delete [] str;
     str = rhs.str;
+    // you need to nullptr right side object, because if not
+    // this object when destroyed would take this value with itself
     rhs.str = nullptr;
     return *this;
     
