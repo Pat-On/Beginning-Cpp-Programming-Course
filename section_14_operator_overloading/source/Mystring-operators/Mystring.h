@@ -4,24 +4,24 @@
 class Mystring
 {
 private:
-    char *str;      // pointer to a char[] that hold a C-style string
+    char *str; // pointer to a char[] that hold a C-style string
 public:
-    Mystring();                                                          // No-args constructor
-    Mystring(const char *s);                                      // Overloaded constructor
-    Mystring(const Mystring &source);                     // Copy constructor
-    Mystring( Mystring &&source);                          // Move constructiror
-    ~Mystring();                                                      // Destructor
-    
-    Mystring &operator=(const Mystring &rhs);    // Copy assignment
-    Mystring &operator=(Mystring &&rhs);          // Move assignment
+    Mystring();                       // No-args constructor
+    Mystring(const char *s);          // Overloaded constructor
+    Mystring(const Mystring &source); // Copy constructor
+    Mystring(Mystring &&source);      // Move constructiror
+    ~Mystring();                      // Destructor
 
-    Mystring operator-() const;                             // make lowercase
-    Mystring operator+(const Mystring &rhs) const;        // concatenate
-    bool operator==(const Mystring &rhs) const;
-    
+    Mystring &operator=(const Mystring &rhs); // Copy assignment
+    Mystring &operator=(Mystring &&rhs);      // Move assignment
+
+    Mystring operator-() const;                    // make lowercase - unary operator
+    Mystring operator+(const Mystring &rhs) const; // concatenate - binary operator
+    bool operator==(const Mystring &rhs) const;    // equality operator
+
     void display() const;
 
-    int get_length() const;                                        // getters
+    int get_length() const; // getters
     const char *get_str() const;
 };
 
