@@ -49,12 +49,15 @@ int main()
     Base base;
     base.a = 100; // OK
                   //    base.b = 200;   // Compiler Error
-                  //    base.c = 300;   // Compiler Error
+
+    //    base.c = 300;   // Compiler Error
 
     cout << "=== Base member access from derived objects ===========" << endl;
     Derived d;
     d.a = 100; // OK
                //    d.b = 200;  // Compiler Error
+               // interesting note: we do not have access to this, but it is still inherited.
+               // it mean that it exist on our derived class <---- interesting
                //    d.c = 300;  // Compiler Error
     return 0;
 }
