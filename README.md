@@ -39,3 +39,6 @@ https://en.cppreference.com/w/cpp/header
 
 check smart pointers:
 https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
+
+C++ Core Guidelines:
+https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conventional

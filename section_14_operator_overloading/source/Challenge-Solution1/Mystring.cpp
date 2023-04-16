@@ -126,6 +126,8 @@ bool Mystring::operator>(const Mystring &rhs) const
     return (std::strcmp(str, rhs.str) > 0);
 }
 
+// ----------------- MEMBER FUNCTIONS - METHODS
+
 // Make lowercase
 Mystring Mystring::operator-() const
 {
