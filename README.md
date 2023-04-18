@@ -45,3 +45,6 @@ https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conventional
 
 Dynamic Polymorphism in C++
 https://medium.com/swlh/everything-about-dynamic-polymorphism-in-c-b4218976d11e
+
+Differences between pointers and references in C++
+https://www.educative.io/answers/differences-between-pointers-and-references-in-cpp
