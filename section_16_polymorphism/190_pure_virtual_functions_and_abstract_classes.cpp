@@ -181,7 +181,7 @@ public:
 
 // ------------------------------------------------------------------------------------
 
-void screen_refresh(const std::vector<Shape *> &shapes)
+void screen_refresh(const std::vector<Shape *> &shapes) // &shapes - passed by reference
 {
     std::cout << "Refreshing" << std::endl;
     for (const auto p : shapes)
