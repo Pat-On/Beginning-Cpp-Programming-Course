@@ -42,3 +42,6 @@ https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-17
 
 C++ Core Guidelines:
 https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Ro-conventional
+
+Dynamic Polymorphism in C++
+https://medium.com/swlh/everything-about-dynamic-polymorphism-in-c-b4218976d11e
