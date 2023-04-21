@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_17_smart_pointers/source/SharedPointers",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_17_smart_pointers/source/SharedPointers/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_17_smart_pointers/source/WeakPointers",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_17_smart_pointers/source/WeakPointers/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
