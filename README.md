@@ -48,3 +48,6 @@ https://medium.com/swlh/everything-about-dynamic-polymorphism-in-c-b4218976d11e
 
 Differences between pointers and references in C++
 https://www.educative.io/answers/differences-between-pointers-and-references-in-cpp
+
+RAII
+https://en.cppreference.com/w/cpp/language/raii
