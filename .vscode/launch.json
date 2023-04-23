@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_18_exception_handling/source/ChallengeSolution",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_18_exception_handling/source/ChallengeSolution/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_19_I_O_and_streams/source/ReadFile_2",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_19_I_O_and_streams/source/ReadFile_2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
