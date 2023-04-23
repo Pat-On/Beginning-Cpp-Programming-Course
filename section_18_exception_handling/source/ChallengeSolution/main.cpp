@@ -8,10 +8,12 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     std::unique_ptr<Account> moes_account;
     std::unique_ptr<Account> larrys_account;
-    try {
+    try
+    {
         larrys_account = std::make_unique<Savings_Account>("Larry", -2000.0);
         std::cout << *larrys_account << std::endl;
     }
@@ -20,23 +22,27 @@ int main() {
         std::cerr << ex.what() << std::endl;
     }
 
-    try {
+    try
+    {
         moes_account = std::make_unique<Savings_Account>("Moe", 1000.0);
         std::cout << *moes_account << std::endl;
         moes_account->withdraw(500.0);
         std::cout << *moes_account << std::endl;
         moes_account->withdraw(1000.0);
         std::cout << *moes_account << std::endl;
-        
+        moes_account->withdraw(1000.0);
+        std::cout << *moes_account << std::endl;
+        moes_account->withdraw(1000.0);
+        std::cout << *moes_account << std::endl;
     }
     catch (const IllegalBalanceException &ex)
     {
         std::cerr << ex.what() << std::endl;
     }
-    catch (const InsufficientFundsException &ex) {
+    catch (const InsufficientFundsException &ex)
+    {
         std::cerr << ex.what() << std::endl;
     }
     std::cout << "Program completed successfully" << std::endl;
     return 0;
 }
-
