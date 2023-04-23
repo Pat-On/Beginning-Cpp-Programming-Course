@@ -4,16 +4,22 @@
 #include <iostream>
 #include <fstream>
 
-int main() {
+int main()
+{
     std::ifstream in_file;
-    in_file.open("../poem.txt");
-    if (!in_file) {
+    in_file.open("poem.txt");
+    if (!in_file)
+    {
         std::cerr << "Problem opening file" << std::endl;
         return 1;
     }
 
-    char c {};
-    while (in_file.get(c)) {
+    char c{};
+
+    // with that you do not have to worry about errors because of strange characters
+    // so basically character by character till the end of the line
+    while (in_file.get(c))
+    {
         std::cout << c;
     }
     std::cout << std::endl;
