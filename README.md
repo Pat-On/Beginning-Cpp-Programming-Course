@@ -57,3 +57,6 @@ https://stackoverflow.com/questions/160147/catching-exceptions-from-a-constructo
 
 When should I really use noexcept?
 https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept
+
+I/O Redirection in C++
+https://www.geeksforgeeks.org/io-redirection-c/
