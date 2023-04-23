@@ -54,3 +54,6 @@ https://en.cppreference.com/w/cpp/language/raii
 
 Catching exceptions from a constructor's initializer list
 https://stackoverflow.com/questions/160147/catching-exceptions-from-a-constructors-initializer-list
+
+When should I really use noexcept?
+https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept
