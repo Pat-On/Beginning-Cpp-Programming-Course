@@ -63,3 +63,13 @@ https://www.geeksforgeeks.org/io-redirection-c/
 
 Jump Table
 https://stackoverflow.com/questions/48017/what-is-a-jump-table
+
+Complexity Theory for Software Developers
+https://www.methodsandtools.com/archive/archive.php?id=119#:~:text=Complexity%20Theory%20for%20Software%20Developers&text=Many%20agile%20software%20development%20experts,change%20and%20learn%20from%20experience.
+
+std::function
+https://en.cppreference.com/w/cpp/memory/allocator
+
+C++ Reference Material
+STL Function Objects (Functors)
+https://cs.smu.ca/~porter/csc/ref/stl/function_objects.html#:~:text=In%20the%20STL%2C%20algorithms%20often,more%20useful%20for%20this%20purpose.
