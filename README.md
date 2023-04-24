@@ -60,3 +60,6 @@ https://stackoverflow.com/questions/10787766/when-should-i-really-use-noexcept
 
 I/O Redirection in C++
 https://www.geeksforgeeks.org/io-redirection-c/
+
+Jump Table
+https://stackoverflow.com/questions/48017/what-is-a-jump-table
