@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_19_I_O_and_streams/source/StringStream",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_19_I_O_and_streams/source/StringStream/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_20_the_standard_template_library_stl/source/FunctionTemplates",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_20_the_standard_template_library_stl/source/FunctionTemplates/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
