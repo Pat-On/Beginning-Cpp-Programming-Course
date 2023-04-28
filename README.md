@@ -73,3 +73,6 @@ https://en.cppreference.com/w/cpp/memory/allocator
 C++ Reference Material
 STL Function Objects (Functors)
 https://cs.smu.ca/~porter/csc/ref/stl/function_objects.html#:~:text=In%20the%20STL%2C%20algorithms%20often,more%20useful%20for%20this%20purpose.
+
+Algorithms library
+https://en.cppreference.com/w/cpp/algorithm
