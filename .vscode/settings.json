@@ -72,7 +72,13 @@
     "ctime": "cpp",
     "fstream": "cpp",
     "iomanip": "cpp",
-    "sstream": "cpp"
+    "sstream": "cpp",
+    "array": "cpp",
+    "deque": "cpp",
+    "list": "cpp",
+    "unordered_map": "cpp",
+    "functional": "cpp",
+    "numeric": "cpp"
   },
   "C_Cpp_Runner.showCompilationTime": false
 }
