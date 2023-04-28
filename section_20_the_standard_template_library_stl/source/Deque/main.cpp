@@ -29,7 +29,7 @@ void test1()
     display(d1);
 
     d[0] = 100;
-    d.at(1) = 200; // 
+    d.at(1) = 200; // with check - error if out of scope
     display(d);
 }
 
