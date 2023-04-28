@@ -76,3 +76,6 @@ https://cs.smu.ca/~porter/csc/ref/stl/function_objects.html#:~:text=In%20the%20S
 
 Algorithms library
 https://en.cppreference.com/w/cpp/algorithm
+
+One of the most important page
+https://en.cppreference.com/w/
