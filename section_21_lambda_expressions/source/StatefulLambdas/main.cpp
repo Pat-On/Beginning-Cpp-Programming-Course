@@ -193,11 +193,14 @@ public:
 
 	auto change_person1()
 	{
+		// capture by reference - compiler is going to figure it out bvecause of the syntax
 		return [this](std::string new_name, int new_age)
-		{name = new_name; age = new_age; };
+		{name = new_name; this->age = new_age; }; // this is added by compiler
 	}
 	auto change_person2()
 	{
+		// IMPORTANT THESE CAPTURES WORKS IN THE SAME WAY [THIS] [&] [=]
+		// depreciated in c++ 20
 		return [=](std::string new_name, int new_age)
 		{name = new_name; age = new_age; };
 	}
@@ -252,7 +255,7 @@ private:
 public:
 	Lambda(int y) : y{y} {};
 
-	void operator()(int x) const
+	void operator()(int x) const // IT LOOKS EXACTLY THE SAME
 	{
 		std::cout << x + y << std::endl;
 	};
@@ -265,7 +268,8 @@ void test9()
 
 	int y{100};
 
-	Lambda lambda1(y);
+	Lambda lambda1(y); // LAMBDA AS A CLASS
+	// LAMBDA
 	auto lambda2 = [y](int x)
 	{ std::cout << x + y << std::endl; };
 
@@ -305,7 +309,8 @@ public:
 		int count{0};
 		std::copy_if(people.begin(),
 					 people.end(),
-					 std::back_inserter(result),
+					 std::back_inserter(result), // COPY MATCHES TO THE RESULT <-- INTERESTING SYNTAX
+					 // LAMBDA
 					 [this, &count, max_age](const Person &p)
 					 { return p.get_age() > max_age && ++count <= max_people; });
 		return result;
