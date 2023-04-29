@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_21_lambda_expressions/source/StatelessLambda",
-      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_21_lambda_expressions/source/StatelessLambda/build/Debug/outDebug",
+      "cwd": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_21_lambda_expressions/source/StatefulLambdas",
+      "program": "c:/Users/Paton/Desktop/Projects/BeginningC-Programming-Course/section_21_lambda_expressions/source/StatefulLambdas/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
