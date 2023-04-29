@@ -108,8 +108,8 @@ void test3()
 // using std::function as a parameter in C++14 and greater
 // or
 // auto as parameter type in C++20
-void filter_vector(const std::vector<int> &vec, std::function<bool(int)> func)
-{
+void filter_vector(const std::vector<int> &vec, std::function<bool(int)> func) // std::function<bool(int)> fun <-- function return type + param type
+{                                                                              // predicate lambda, because it is lambda that expect one or more parameters and return boolean
     // void filter_vector (const std::vector<int>  &vec, auto func) {
     std::cout << "[ ";
     for (int i : vec)
