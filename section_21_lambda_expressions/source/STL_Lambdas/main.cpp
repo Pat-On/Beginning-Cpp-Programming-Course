@@ -46,8 +46,8 @@ void test2()
 	std::vector<Point> triangle3 {pt1,pt2,pt4};
 	
 	// Test whether triangle1 and triangle2 are equivalent
-	if (std::is_permutation(triangle1.begin(), triangle1.end(), triangle2.begin(), [] (Point lhs, Point rhs) {
-        return lhs.x == rhs.x && lhs.y == rhs.y;
+	if (std::is_permutation(triangle1.begin(), triangle1.end(), triangle2.begin(), [] (Point lhs, Point rhs) { // <-- interesting
+        return lhs.x == rhs.x && lhs.y == rhs.y;			// <-- logic in lambda
         })
     )
 		std::cout << "Triangle1 and Triangle2 are equivalent!" << std::endl;
@@ -76,7 +76,7 @@ void test3()
 	std::vector<int> test_scores {93,88,75,68,65};
 	int bonus_points {5};
 	
-	std::transform(test_scores.begin(), test_scores.end(), test_scores.begin(), [bonus_points] (int score) {
+	std::transform(test_scores.begin(), test_scores.end(), test_scores.begin(), [bonus_points] (int score) { // <---- will modify
         return score += bonus_points;
     });
 	
@@ -105,7 +105,7 @@ void test4()
 	
 	std::vector<int> nums {1,2,3,4,5};
 	
-	nums.erase(std::remove_if(nums.begin(), nums.end(), [] (int num) {
+	nums.erase(std::remove_if(nums.begin(), nums.end(), [] (int num) { // Modifying sequence operation - very common idiom
             return num % 2 == 0;
         }), 
         nums.end());
@@ -217,8 +217,12 @@ private:
 	std::vector<char> restricted_symbols {'!','$','+'};
 public:
 	bool is_valid(std::string password) {
-		return std::all_of(password.begin(), password.end(), [this] (char character) {
-			return std::none_of(restricted_symbols.begin(), restricted_symbols.end(), [character] (char symbol) {
+		return std::all_of(password.begin(), password.end(), 
+		// lambda
+		[this] (char character) { 
+			return std::none_of(restricted_symbols.begin(), restricted_symbols.end(), 
+			// lambda
+			[character] (char symbol) {
 				return character == symbol;});});
 	}
 };
